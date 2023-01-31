@@ -1,0 +1,23 @@
+.stepper::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #65a30d;
+  transition: transform 0.5s ease-in-out;
+
+}
+.progress-0.stepper::after  {
+  transform: translateX(-100%);
+  background-color: black;
+}
+
+.progress-50  {
+  transform: translateX(-50%);
+}
+
+.progress-100 {
+  transform: translateX(0);
+}
